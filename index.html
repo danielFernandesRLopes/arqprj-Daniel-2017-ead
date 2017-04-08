@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício 3</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1>Agenda Telefonica</h1>
+
+
+
+<table>
+	
+	<thead class="tabela-head">
+			<tr>	
+				<th>Nome</th>
+				<th>Telefone</th>
+			</tr>
+	</thead>
+
+	<tbody id="contatos" class="tabela-body"></tbody>
+
+</table>
+
+<section class="container">
+<h2 id="titulo-form">Adicionar novo contato</h2>
+	<ul id="erros-form"></ul>
+	    <form id="form-adiciona">
+	        <div class="">
+	            <label for="nome">Nome:</label>
+	            <input id="nome" name="nome" type="text" placeholder="digite o nome do seu contato" >
+	        </div>
+	        <div class="grupo">
+	            <label for="telefone">Telefone:</label>
+	            <input id="telefone" name="telefone" type="text" placeholder="digite o telefone do seu contato" >
+	        </div>
+			     
+			<button id="adicionar-contato">Adicionar</button>
+		</form>			    
+</section>
+
+<label for="filtrar-tabela">Filtre:</label>
+<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
+
+<table>
+	
+	<thead class="pesquisa-head">
+			<tr>	
+				<th>Nome</th>
+				<th>Telefone</th>
+			</tr>
+	</thead>
+
+	<tbody id="pesquisa-contatos" class="pesquisa-body"></tbody>
+
+</table>
+
+<script type="text/javascript" src="js/listaContatos.js"></script>
+<script type="text/javascript" src="js/contato.js"></script>
+<script type="text/javascript" src="js/agenda.js"></script>
+<script type="text/javascript" src="js/iContatoDAO.js"></script>
+<script type="text/javascript" src="js/contatoDAO.js"></script>
+<script type="text/javascript" src="js/adicionar-contato.js"></script>
+<script type="text/javascript" src="js/validar-formulario.js"></script>
+<script type="text/javascript" src="js/pesquisar-contato.js"></script>
+
+</body>
+</html>
